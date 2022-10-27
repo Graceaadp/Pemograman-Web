@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header{
+        color:rgb(51, 40, 3);
+        padding: 30px;
+        background-color: rgb(243, 187, 177);
+        box-shadow: 20px 20px 25px -20px #777;
+    }
+    nav{
+        background-color: rgb(246, 221, 190);
+        padding: 14px 16px;
+        font-family: "calibri";
+        font-size: 20px; 
+        display: flex;
+    }
+    nav a{
+        padding: 10px 10px 10px;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    footer{
+        background-color:rgb(150, 105, 39);
+        position: static;
+        bottom: 50;
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+    }
+    img{  
+            position: relative;
+            display: block;
+            width: 15%;
+        }
+    
+    @media screen and (max-width:500px){
+        .header{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        nav, nav a{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer{
+            text-align: center;
+            margin-leftauto;
+            margin-right: auto;
+        }
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            display: block;
+            width: 50%;
+        }
+    }
+        
+</style>
+<body>
+    <header class="header">
+        <h1 style="font-size: 60px; text-align: center;">PORTOFOLIO BY GRACE</h1>
+        <p style="font-Size: 20px; text-align: center;">I'm Computer Science Student at Pertamina University</p>
+    </header>
+    <nav class="navbar">
+    
+        <a style="color: rgb(69, 100, 236);" href="Intro">Home</a> 
+        <a style="color: rgb(69, 100, 236)" href="Biodata">Biodata</a>
+        <a style="color: rgb(69, 100, 236)" href="/Contact">Contact Me</a>  
+        
+    </nav>
+    <main> 
+        <img src="foto.jpg" alt="Foto cipung">
+        <p> Saya Gracea, saya merupakan mahasiswa semester 5 dari prodi Ilmu Komputer 
+            <br> saat ini saya sedang mengikuti mata kuliah pratikum bahasa pemograman Web.
+            <br> Saya baru mempelajari web development, karena itu 
+            saya akan terus mempelajarinya
+        </p>
+        
+        <section> 
+            <h1> Biodata Diri</h1>
+            <table> 
+                <tr>
+                    <td> Nama </td>
+                    <td> : Gracea Desmiana</td>
+                </tr>
+                <tr> 
+                    <td> Tanggal Lahir  </td>
+                    <td> : 19-12-2002</td>
+                </tr>
+                <tr> 
+                    <td> Hobi</td>
+                    <td> : Tidur</td>
+                </tr>
+            </table>
+        </section>
+        <section> 
+            <h2> Contact Me </h2>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="email" placeholder="alamat email... "><br>
+                <label for="Message">pesan</label><br>
+                <textarea name="message" id="message" placeholder=" Tulis pesan anda..." cols="30" rows="10"></textarea><br>
+                <input type="submit" value="submit">
+            </form>
+        </section>
+    </main>
+        <footer style="text-align: center;">
+        <p> Copyright &copy; Gracea Desmiana, 2022 </p>
+    </footer>
+
+</body>
+</html>
